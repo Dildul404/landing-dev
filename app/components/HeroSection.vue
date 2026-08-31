@@ -33,16 +33,17 @@ import { Code2, ArrowRight, MessageCircle } from "lucide-vue-next";
         <div class="flex flex-wrap gap-6 items-center">
           <div class="brutalist-btn-group">
             <div class="brutalist-btn-ghost"></div>
-            <button
+            <a target="_blank"
+              href="https://www.fiverr.com/dreel_/build-a-fast-responsive-landing-page-with-nuxt-and-tailwindcss"
               class="brutalist-btn-main bg-primary text-on-primary font-label-mono px-8 py-4 uppercase tracking-widest text-sm font-bold flex items-center gap-2 transition-colors"
             >
               Order on Fiverr
               <ArrowRight :size="18" />
-            </button>
+          </a>
           </div>
 
-          <a
-            href="#"
+          <a target="_blank"
+            href="https://wa.me/+6285861882689"
             class="group flex items-center gap-2 font-label-mono text-secondary hover:text-primary transition-colors"
           >
             <MessageCircle :size="20" class="transition-colors" />

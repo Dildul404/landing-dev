@@ -22,8 +22,9 @@ const columns = [
   {
     label: "Social",
     links: [
-      { text: "LINKEDIN", active: false, href: "https://linkedin.com", target: "_blank" },
-      { text: "GITHUB", active: false, href: "https://github.com", target: "_blank" },
+      { text: "FIVERR", active: false, href: "https://www.fiverr.com/dreel_", target: "_blank" },
+      { text: "GITHUB", active: false, href: "https://github.com/Dildul404", target: "_blank" },
+      { text: "INSTAGRAM", active: false, href: "https://www.instagram.com/dilkimulyana/", target: "_blank" },
     ],
   },
 ];

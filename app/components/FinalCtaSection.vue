@@ -14,16 +14,17 @@ import { Zap, MessageCircle } from "lucide-vue-next";
     <div class="flex flex-col sm:flex-row gap-6 justify-center items-center mt-12">
       <div class="brutalist-btn-group">
         <div class="brutalist-btn-ghost"></div>
-        <button
+        <a target="_blank"
+          href="https://www.fiverr.com/dreel_/build-a-fast-responsive-landing-page-with-nuxt-and-tailwindcss"
           class="brutalist-btn-main bg-primary text-on-primary font-label-mono px-10 py-5 uppercase tracking-widest text-base font-bold flex items-center gap-3 transition-colors"
         >
           Initiate Project
           <Zap :size="20" />
-        </button>
+      </a>
       </div>
 
-      <a
-        href="#"
+      <a target="_blank"
+        href="https://wa.me/+6285861882689"
         class="group flex items-center gap-2 font-label-mono text-secondary hover:text-primary transition-colors border border-outline/30 px-8 py-4 bg-surface-container hover:bg-surface-container-high"
       >
         <MessageCircle :size="20" class="transition-colors" />
