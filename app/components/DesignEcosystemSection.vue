@@ -3,14 +3,14 @@
     <div class="max-w-[1600px] mx-auto">
       <div class="mb-16 flex items-baseline justify-between border-b border-outline/20 pb-4 transition-colors">
         <h2 class="font-headline-lg-mobile md:font-headline-lg text-on-surface transition-colors">
-          Design Ecosystem
+          Ekosistem Desain
         </h2>
         <span class="font-label-mono text-secondary text-sm hidden md:block transition-colors">
-          [ EXPLORE_PATTERNS ]
+          [ EKSPLOR_PATTERN ]
         </span>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-12 auto-rows-[240px] gap-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-12 auto-rows-60 gap-4">
         <template v-for="item in ecosystemItems" :key="item.id">
           
           <!-- 01 Minimalism -->
@@ -35,7 +35,7 @@
 
           <!-- 02 Glassmorphism -->
           <div v-else-if="item.type === 'glassmorphism'" :class="[getSizeClasses(item.size), 'relative group']">
-            <div class="absolute inset-0 bg-gradient-to-br from-black/5 to-black/0 dark:from-white/5 dark:to-white/0 backdrop-blur-xl border border-black/10 dark:border-white/10 p-6 flex flex-col justify-between z-10 transition-colors">
+            <div class="absolute inset-0 bg-linear-to-br from-black/5 to-black/0 dark:from-white/5 dark:to-white/0 backdrop-blur-xl border border-black/10 dark:border-white/10 p-6 flex flex-col justify-between z-10 transition-colors">
               <div class="font-label-mono text-secondary transition-colors flex justify-between items-center">
                 <span>{{ item.id }}</span>
                 <component :is="item.icon" class="w-5 h-5 opacity-50" />
@@ -91,7 +91,7 @@
 
           <!-- 07 Vibrant Gradients -->
           <div v-else-if="item.type === 'gradients'" :class="[getSizeClasses(item.size), 'relative p-6 flex flex-col justify-between overflow-hidden group']">
-            <div class="absolute inset-0 bg-gradient-to-br from-primary via-tertiary to-secondary opacity-90 group-hover:scale-105 transition-transform duration-700"></div>
+            <div class="absolute inset-0 bg-linear-to-br from-primary via-tertiary to-secondary opacity-90 group-hover:scale-105 transition-transform duration-700"></div>
             <div class="relative z-10 flex justify-between items-center">
               <div class="font-label-mono text-on-primary transition-colors font-bold">{{ item.id }}</div>
               <component :is="item.icon" class="w-5 h-5 text-on-primary" />
@@ -161,7 +161,7 @@
 
       <div class="mt-12 text-center">
         <p class="font-body-md text-on-surface-variant text-sm italic transition-colors">
-          * All of these design styles can be combined to suit your project needs.
+          * Semua style desain ini bisa dikombinasikan menyesuaikan kebutuhan project Anda.
         </p>
       </div>
     </div>
@@ -178,7 +178,7 @@ const ecosystemItems = [
   {
     id: '01',
     title: 'Minimalism',
-    description: 'Focusing on stark contrast, negative space, and essential typography.',
+    description: 'Fokus pada kontras yang kuat, negative space, dan tipografi esensial.',
     size: 'large',
     type: 'minimalism',
     icon: AlignLeft
@@ -186,7 +186,7 @@ const ecosystemItems = [
   {
     id: '02',
     title: 'Glassmorphism',
-    description: 'Transparency, blur effects, and glass-like visual elements.',
+    description: 'Efek transparan, blur, dan elemen visual layaknya kaca.',
     size: 'normal',
     type: 'glassmorphism',
     icon: Layers
@@ -194,7 +194,7 @@ const ecosystemItems = [
   {
     id: '03',
     title: 'Kinetic Typography',
-    description: 'Typography that can move or transform to emphasize important content.',
+    description: 'Tipografi bergerak dan dinamis untuk menonjolkan pesan penting.',
     size: 'normal',
     type: 'kinetic',
     icon: Type
@@ -202,7 +202,7 @@ const ecosystemItems = [
   {
     id: '04',
     title: 'Neo-brutalism',
-    description: 'Strong borders, bold shapes, high contrast, and expressive visual elements.',
+    description: 'Garis tegas, shape bold, kontras tinggi, dan ekspresif.',
     size: 'normal',
     type: 'neobrutalism',
     icon: Square
@@ -210,7 +210,7 @@ const ecosystemItems = [
   {
     id: '05',
     title: 'Asymmetric Layout',
-    description: 'Layout compositions that do not rely entirely on conventional symmetrical structures.',
+    description: 'Komposisi layout asimetris yang nggak bergantung pada struktur simetris konvensional.',
     size: 'normal',
     type: 'asymmetric',
     icon: MoveDiagonal
@@ -218,7 +218,7 @@ const ecosystemItems = [
   {
     id: '06',
     title: 'Neumorphism',
-    description: 'Soft shadows and elements that appear integrated into the surrounding surface.',
+    description: 'Soft shadow bikin elemen UI keliatan menyatu dengan background.',
     size: 'wide-third',
     type: 'neumorphism',
     icon: Circle
@@ -226,7 +226,7 @@ const ecosystemItems = [
   {
     id: '07',
     title: 'Vibrant Gradients',
-    description: 'Strong and expressive gradient combinations.',
+    description: 'Kombinasi gradien warna yang ngejreng dan ekspresif.',
     size: 'wide-third',
     type: 'gradients',
     icon: Palette
@@ -234,7 +234,7 @@ const ecosystemItems = [
   {
     id: '08',
     title: 'Dark Mode',
-    description: 'Dark interfaces with strong contrast and modern visual presentation.',
+    description: 'Tampilan antarmuka gelap yang modern, elegan, dan kontras.',
     size: 'wide-third',
     type: 'darkmode',
     icon: Moon
@@ -242,7 +242,7 @@ const ecosystemItems = [
   {
     id: '09',
     title: 'Bento Grid',
-    description: 'Modular content sections arranged using cards with different sizes.',
+    description: 'Struktur layout modular menggunakan card dengan ukuran bervariasi.',
     size: 'wide-half',
     type: 'bento',
     icon: LayoutGrid
@@ -250,7 +250,7 @@ const ecosystemItems = [
   {
     id: '10',
     title: 'Micro Interaction',
-    description: 'Small interactive effects for buttons, cards, navigation, and hover states.',
+    description: 'Animasi kecil buat interaksi tombol, card, dan navigasi (hover effect).',
     size: 'normal',
     type: 'micro',
     icon: MousePointerClick
@@ -258,7 +258,7 @@ const ecosystemItems = [
   {
     id: '11',
     title: 'Abstract Shapes',
-    description: 'Abstract visual elements used to strengthen the identity of the website.',
+    description: 'Elemen abstrak visual untuk memperkuat identitas brand website Anda.',
     size: 'normal',
     type: 'abstract',
     icon: Shapes

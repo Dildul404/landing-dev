@@ -1,11 +1,11 @@
 <script setup>
 const steps = [
-  { n: "01", title: "Discuss", desc: "Defining project scope and technical parameters.", offset: false },
-  { n: "02", title: "Plan", desc: "Wireframing logic and asymmetric fluid grid structures.", offset: true },
-  { n: "03", title: "Design", desc: "Applying high-contrast visual tokens and typography.", offset: false },
-  { n: "04", title: "Develop", desc: "Writing clean, responsive code without bloat.", offset: true },
-  { n: "05", title: "Review", desc: "Rigorous cross-device testing and performance checks.", offset: false },
-  { n: "06", title: "Deliver", desc: "Deployment of a production-ready, bespoke asset.", offset: true, final: true },
+  { n: "01", title: "Discuss", desc: "Ngobrolin project scope, requirement, dan goals bisnis.", offset: false },
+  { n: "02", title: "Plan", desc: "Bikin wireframe, nentuin flow, dan struktur layout.", offset: true },
+  { n: "03", title: "Design", desc: "Menerapkan visual identity, typography, dan UI design.", offset: false },
+  { n: "04", title: "Develop", desc: "Coding pakai clean code, responsive, dan no bloat.", offset: true },
+  { n: "05", title: "Review", desc: "Testing responsif di berbagai device dan ngecek performa.", offset: false },
+  { n: "06", title: "Deliver", desc: "Deploy website yang udah production-ready ke server.", offset: true, final: true },
 ];
 </script>
 
@@ -16,7 +16,7 @@ const steps = [
   >
     <div class="max-w-[1600px] mx-auto py-16">
       <h2 class="font-headline-lg-mobile md:font-headline-lg text-on-surface mb-16 text-center md:text-left transition-colors">
-        The Engine Room
+        Proses Kerja (Workflow)
       </h2>
 
       <div class="grid grid-cols-2 md:grid-cols-6 gap-8 relative">

@@ -1,12 +1,12 @@
 <script setup>
 const items = [
-  { n: "01", title: "Website is created according to project requirements" },
-  { n: "02", title: "Not restricted to a predefined template" },
-  { n: "03", title: "More specific visual identity" },
-  { n: "04", title: "Content structure can be customized" },
-  { n: "05", title: "User experience can be designed according to the target audience" },
-  { n: "06", title: "Website can be developed according to future requirements" },
-  { n: "07", title: "The design can communicate the character of the brand more effectively", wide: true },
+  { n: "01", title: "Website dibuat sesuai kebutuhan project" },
+  { n: "02", title: "Nggak kaku dan terikat struktur template" },
+  { n: "03", title: "Visual identity lebih unik dan spesifik" },
+  { n: "04", title: "Struktur konten bisa di-custom sebebasnya" },
+  { n: "05", title: "User experience (UX) dioptimalkan untuk target audiens" },
+  { n: "06", title: "Mudah di-scale up untuk kebutuhan ke depannya" },
+  { n: "07", title: "Desain mengkomunikasikan karakter brand jauh lebih efektif", wide: true },
 ];
 </script>
 
@@ -14,17 +14,17 @@ const items = [
   <section id="why-custom" class="px-gutter py-16 mt-32 max-w-[1600px] mx-auto">
     <div class="mb-16 flex items-baseline justify-between border-b border-outline/20 pb-4 transition-colors">
       <h2 class="font-headline-lg-mobile md:font-headline-lg text-on-surface transition-colors uppercase">
-        Why Custom Landing Page?
+        Kenapa Harus Landing Page Custom?
       </h2>
       <span class="font-label-mono text-secondary text-sm hidden md:block transition-colors">
-        [ CUSTOM_SOLUTIONS ]
+        [ SOLUSI_CUSTOM ]
       </span>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-16">
       <div class="md:col-span-6">
         <p class="font-body-md text-on-surface-variant text-xl leading-relaxed transition-colors">
-          Choosing a custom landing page means your website is built from the ground up to serve your unique goals. It provides flexibility, scalability, and a tailor-made experience that off-the-shelf templates simply cannot offer.
+          Memilih landing page custom berarti website Anda dibangun dari nol khusus untuk mencapai goals bisnis Anda. Lebih fleksibel, scalable, dan memberikan experience unik yang nggak bisa didapatkan dari template instan.
         </p>
       </div>
     </div>

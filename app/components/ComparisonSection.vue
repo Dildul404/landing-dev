@@ -2,19 +2,19 @@
 import { Sparkles, CheckCircle2, LayoutGrid, Info } from "lucide-vue-next";
 
 const customPoints = [
-  "Design created according to project requirements.",
-  "More unique visual identity.",
-  "Section structure can be customized.",
-  "Website does not have to follow a predefined template structure.",
-  "Visual elements can be designed specifically for the brand.",
-  "Interactions and animations can be customized.",
+  "Desain dirancang khusus sesuai dengan kebutuhan project.",
+  "Visual identity lebih unik dan nggak pasaran.",
+  "Struktur tiap section bisa di-custom sebebasnya.",
+  "Website nggak harus mengikuti struktur template yang kaku.",
+  "Elemen visual dibuat spesifik untuk menonjolkan brand.",
+  "Interaksi dan animasi bisa di-custom biar makin engaging.",
 ];
 
 const templatePoints = [
-  "Uses an existing template structure.",
-  "Visual appearance generally follows the template's design direction.",
-  "Customization can depend on the selected theme and plugins.",
-  "Different websites using the same template can have similar visual characteristics.",
+  "Harus mengikuti struktur template yang sudah ada.",
+  "Tampilan visual biasanya monoton mengikuti template.",
+  "Kustomisasi terbatas, tergantung tema dan plugin yang dipakai.",
+  "Bisa kelihatan mirip banget sama website lain yang pakai template sama.",
 ];
 </script>
 
@@ -22,7 +22,7 @@ const templatePoints = [
   <section id="comparison" class="px-gutter py-16 mt-32 max-w-[1600px] mx-auto">
     <div class="mb-16 border-b border-outline/20 pb-4 transition-colors">
       <h2 class="font-headline-lg-mobile md:font-headline-lg text-on-surface uppercase transition-colors">
-        Custom UI vs Template-Based Website
+        Custom UI vs Template Instan
       </h2>
     </div>
 
@@ -50,7 +50,7 @@ const templatePoints = [
       <div class="bg-surface-container-low border border-outline/10 p-8 h-full transition-colors">
         <div class="flex items-center gap-3 mb-8 opacity-60">
           <LayoutGrid :size="20" class="text-secondary transition-colors" />
-          <h3 class="font-headline-md text-on-surface transition-colors">Template-Based</h3>
+          <h3 class="font-headline-md text-on-surface transition-colors">Pakai Template</h3>
         </div>
         <ul class="space-y-6">
           <li v-for="point in templatePoints" :key="point" class="flex items-start gap-4 opacity-70">

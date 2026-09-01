@@ -16,18 +16,17 @@ import { Code2, ArrowRight, MessageCircle } from "lucide-vue-next";
         <div class="inline-flex items-center gap-2 border border-outline-variant/30 px-3 py-1 mb-8 transition-colors">
           <Code2 :size="16" class="text-secondary transition-colors" />
           <span class="font-label-mono text-secondary uppercase text-xs tracking-widest transition-colors">
-            Premium Development
+            Jasa Website Custom
           </span>
         </div>
 
         <h1 class="font-display-xl text-headline-lg md:text-display-xl mb-6 text-on-surface transition-colors">
-          Your Brand Deserves More Than a
+          Brand Anda Layak Mendapatkan Lebih Dari Sekadar
           <span class="text-primary italic transition-colors">Template.</span>
         </h1>
 
         <p class="font-body-md text-on-surface-variant mb-10 max-w-lg transition-colors">
-          I craft custom landing pages with UI designed specifically for your project's technical
-          requirements and aesthetic goals, not generic ready-made themes.
+          Saya menyediakan jasa pembuatan website custom dengan desain antarmuka (UI) yang dibuat khusus untuk memenuhi kebutuhan bisnis dan identitas visual Anda, bukan sekadar menggunakan tema instan yang pasaran.
         </p>
 
         <div class="flex flex-wrap gap-6 items-center">
@@ -37,7 +36,7 @@ import { Code2, ArrowRight, MessageCircle } from "lucide-vue-next";
               href="https://www.fiverr.com/dreel_/build-a-fast-responsive-landing-page-with-nuxt-and-tailwindcss"
               class="brutalist-btn-main bg-primary text-on-primary font-label-mono px-8 py-4 uppercase tracking-widest text-sm font-bold flex items-center gap-2 transition-colors"
             >
-              Order on Fiverr
+              Pesan di Fiverr
               <ArrowRight :size="18" />
           </a>
           </div>
@@ -48,14 +47,14 @@ import { Code2, ArrowRight, MessageCircle } from "lucide-vue-next";
           >
             <MessageCircle :size="20" class="transition-colors" />
             <span class="border-b border-transparent group-hover:border-primary transition-colors pb-0.5">
-              WhatsApp Me
+              Chat via WhatsApp
             </span>
           </a>
         </div>
       </div>
 
       <div class="lg:col-span-5 lg:col-start-8 mt-16 lg:mt-0 relative">
-        <div class="hard-offset-container w-full h-[500px] md:h-[650px] -rotate-2">
+        <div class="hard-offset-container w-full h-125 md:h-162 -rotate-2">
           <div class="hard-offset-shadow bg-secondary transition-colors"></div>
           <div class="relative w-full h-full border border-outline/20 bg-surface-container overflow-hidden transition-colors">
             <div

@@ -25,9 +25,9 @@ const projects = [
   <section id="work" class="px-gutter py-16 mt-32 max-w-[1600px] mx-auto">
     <div class="flex items-center gap-4 mb-16">
       <h2 class="font-headline-lg-mobile md:font-headline-lg text-on-surface uppercase transition-colors">
-        Selected Work
+        Karya Pilihan (Portfolio)
       </h2>
-      <div class="h-px bg-outline/20 flex-grow transition-colors"></div>
+      <div class="h-px bg-outline/20 grow transition-colors"></div>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-x-gutter gap-y-24">
@@ -41,7 +41,7 @@ const projects = [
           <div
             class="hard-offset-shadow bg-outline/20 group-hover:translate-x-3 group-hover:translate-y-3 transition-transform duration-300"
           ></div>
-          <div class="relative border border-outline/10 bg-surface-container h-[400px] transition-colors">
+          <div class="relative border border-outline/10 bg-surface-container h-100 transition-colors">
             <img
               class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-500"
               :alt="project.alt"

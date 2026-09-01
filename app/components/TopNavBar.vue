@@ -42,7 +42,7 @@ const scrollToSection = (e, href) => {
           v-for="link in navLinks"
           :key="link.href"
           :href="link.href"
-          class="font-label-mono uppercase tracking-widest pb-1 transition-colors transition-transform duration-200 active:scale-95"
+          class="font-label-mono uppercase tracking-widest pb-1 transition duration-200 active:scale-95"
           :class="
             activeHref === link.href
               ? 'text-primary border-b-2 border-primary'
@@ -69,7 +69,7 @@ const scrollToSection = (e, href) => {
           <button
             class="brutalist-btn-main bg-primary text-on-primary font-label-mono uppercase tracking-widest px-6 py-2 transition-colors"
           >
-            Get Started
+            Mulai Sekarang
           </button>
         </div>
 
@@ -98,7 +98,7 @@ const scrollToSection = (e, href) => {
       <button
         class="mt-2 bg-primary text-on-primary font-label-mono uppercase tracking-widest px-6 py-2 flex items-center justify-center gap-2"
       >
-        Get Started
+        Mulai Sekarang
       </button>
     </nav>
   </header>

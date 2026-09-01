@@ -1,12 +1,12 @@
 <script setup>
 const items = [
-  { n: "01", title: "Desktop Layout" },
-  { n: "02", title: "Tablet Layout" },
-  { n: "03", title: "Mobile Layout" },
-  { n: "04", title: "Responsive Typography" },
-  { n: "05", title: "Responsive Spacing" },
-  { n: "06", title: "Mobile-friendly Navigation" },
-  { n: "07", title: "Touch-friendly Interaction", wide: true },
+  { n: "01", title: "Tampilan Desktop" },
+  { n: "02", title: "Tampilan Tablet" },
+  { n: "03", title: "Tampilan Mobile" },
+  { n: "04", title: "Tipografi Responsif" },
+  { n: "05", title: "Spacing Fleksibel" },
+  { n: "06", title: "Navigasi Ramah Mobile" },
+  { n: "07", title: "Interaksi Ramah Layar Sentuh", wide: true },
 ];
 </script>
 
@@ -14,18 +14,17 @@ const items = [
   <section id="responsive" class="px-gutter py-16 mt-32 max-w-[1600px] mx-auto">
     <div class="mb-16 flex items-baseline justify-between border-b border-outline/20 pb-4 transition-colors">
       <h2 class="font-headline-lg-mobile md:font-headline-lg text-on-surface transition-colors">
-        Responsive Experience
+        Experience yang Responsif
       </h2>
       <span class="font-label-mono text-secondary text-sm hidden md:block transition-colors">
-        [ ADAPTIVE_SYSTEMS ]
+        [ SISTEM_ADAPTIF ]
       </span>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-16">
       <div class="md:col-span-6">
         <p class="font-body-md text-on-surface-variant text-xl leading-relaxed transition-colors">
-          Designs are meticulously crafted for every screen size. I ensure your brand maintains its
-          impact whether viewed on a 4K monitor or a handheld device.
+          Desain diracik rapi buat semua ukuran layar. Saya mastiin brand Anda tetep kelihatan keren dan profesional, baik saat dibuka di monitor 4K maupun di layar HP kecil.
         </p>
       </div>
     </div>
