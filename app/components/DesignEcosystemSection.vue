@@ -13,189 +13,8 @@
       <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-12 auto-rows-60 gap-4">
         <template v-for="item in ecosystemItems" :key="item.id">
           
-          <!-- 01 Minimalism -->
-          <div v-if="item.type === 'minimalism'" :class="[getSizeClasses(item.size), 'relative group overflow-hidden border border-outline/10 bg-surface-container']">
-            <img src="~/assets/images/minimalism.png" alt="Minimalism" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-            <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-500"></div>
-            <div class="relative h-full p-8 flex flex-col justify-between transition-colors z-10">
-              <div class="font-label-mono text-white/80 flex justify-between items-center">
-                <span>{{ item.id }}</span>
-                <component :is="item.icon" class="w-5 h-5 text-white/80" />
-              </div>
-              <div class="mt-auto pt-16">
-                <h3 class="font-headline-lg-mobile text-white mb-2">{{ item.title }}</h3>
-                <p class="font-body-md text-white/90 text-sm">
-                  {{ item.description }}
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- 02 Glassmorphism -->
-          <div v-else-if="item.type === 'glassmorphism'" :class="[getSizeClasses(item.size), 'relative group overflow-hidden border border-outline/10 bg-surface-container']">
-            <img src="~/assets/images/glassmorphism.png" alt="Glassmorphism" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-            <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-500"></div>
-            <div class="relative h-full p-8 flex flex-col justify-between transition-colors z-10">
-              <div class="font-label-mono text-white/80 flex justify-between items-center">
-                <span>{{ item.id }}</span>
-                <component :is="item.icon" class="w-5 h-5 text-white/80" />
-              </div>
-              <div class="mt-auto pt-16">
-                <h3 class="font-headline-lg-mobile text-white mb-2">{{ item.title }}</h3>
-                <p class="font-body-md text-white/90 text-sm">
-                  {{ item.description }}
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- 03 Kinetic Typography -->
-          <div v-else-if="item.type === 'kinetic'" :class="[getSizeClasses(item.size), 'relative group overflow-hidden border border-outline/10 bg-surface-container']">
-            <img src="~/assets/images/kinetic-type.png" alt="Kinetic Typography" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-            <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-500"></div>
-            <div class="relative h-full p-8 flex flex-col justify-between transition-colors z-10">
-              <div class="font-label-mono text-white/80 flex justify-between items-center">
-                <span>{{ item.id }}</span>
-                <component :is="item.icon" class="w-5 h-5 text-white/80" />
-              </div>
-              <div class="mt-auto pt-16">
-                <h3 class="font-headline-lg-mobile text-white mb-2">{{ item.title }}</h3>
-                <p class="font-body-md text-white/90 text-sm">
-                  {{ item.description }}
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- 04 Neo-brutalism -->
-          <div v-else-if="item.type === 'neobrutalism'" :class="[getSizeClasses(item.size), 'relative group overflow-hidden border border-outline/10 bg-surface-container']">
-            <img src="~/assets/images/neo-brutalism.png" alt="Neo Brutalism" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-            <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-500"></div>
-            <div class="relative h-full p-8 flex flex-col justify-between transition-colors z-10">
-              <div class="font-label-mono text-white/80 flex justify-between items-center">
-                <span>{{ item.id }}</span>
-                <component :is="item.icon" class="w-5 h-5 text-white/80" />
-              </div>
-              <div class="mt-auto pt-16">
-                <h3 class="font-headline-lg-mobile text-white mb-2">{{ item.title }}</h3>
-                <p class="font-body-md text-white/90 text-sm">
-                  {{ item.description }}
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- 05 Asymmetric Layout -->
-          <div v-else-if="item.type === 'asymmetric'" :class="[getSizeClasses(item.size), 'relative group overflow-hidden border border-outline/10 bg-surface-container']">
-            <img src="~/assets/images/asymmetric.png" alt="Asymmetric Layout" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-            <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-500"></div>
-            <div class="relative h-full p-8 flex flex-col justify-between transition-colors z-10">
-              <div class="font-label-mono text-white/80 flex justify-between items-center">
-                <span>{{ item.id }}</span>
-                <component :is="item.icon" class="w-5 h-5 text-white/80" />
-              </div>
-              <div class="mt-auto pt-16">
-                <h3 class="font-headline-lg-mobile text-white mb-2">{{ item.title }}</h3>
-                <p class="font-body-md text-white/90 text-sm">
-                  {{ item.description }}
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- 06 Neumorphism -->
-          <div v-else-if="item.type === 'neumorphism'" :class="[getSizeClasses(item.size), 'relative group overflow-hidden border border-outline/10 bg-surface-container']">
-            <img src="~/assets/images/neumorphism.png" alt="Neumorphism" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-            <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-500"></div>
-            <div class="relative h-full p-8 flex flex-col justify-between transition-colors z-10">
-              <div class="font-label-mono text-white/80 flex justify-between items-center">
-                <span>{{ item.id }}</span>
-                <component :is="item.icon" class="w-5 h-5 text-white/80" />
-              </div>
-              <div class="mt-auto pt-16">
-                <h3 class="font-headline-lg-mobile text-white mb-2">{{ item.title }}</h3>
-                <p class="font-body-md text-white/90 text-sm">
-                  {{ item.description }}
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- 07 Vibrant Gradients -->
-          <div v-else-if="item.type === 'gradients'" :class="[getSizeClasses(item.size), 'relative group overflow-hidden border border-outline/10 bg-surface-container']">
-            <img src="~/assets/images/vibrant-gradients.png" alt="Vibrant Gradients" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-            <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-500"></div>
-            <div class="relative h-full p-8 flex flex-col justify-between transition-colors z-10">
-              <div class="font-label-mono text-white/80 flex justify-between items-center">
-                <span>{{ item.id }}</span>
-                <component :is="item.icon" class="w-5 h-5 text-white/80" />
-              </div>
-              <div class="mt-auto pt-16">
-                <h3 class="font-headline-lg-mobile text-white mb-2">{{ item.title }}</h3>
-                <p class="font-body-md text-white/90 text-sm">
-                  {{ item.description }}
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- 08 Dark Mode -->
-          <div v-else-if="item.type === 'darkmode'" :class="[getSizeClasses(item.size), 'relative group overflow-hidden border border-outline/10 bg-surface-container']">
-            <img src="~/assets/images/dark-mode.png" alt="Dark Mode" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-            <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-500"></div>
-            <div class="relative h-full p-8 flex flex-col justify-between transition-colors z-10">
-              <div class="font-label-mono text-white/80 flex justify-between items-center">
-                <span>{{ item.id }}</span>
-                <component :is="item.icon" class="w-5 h-5 text-white/80" />
-              </div>
-              <div class="mt-auto pt-16">
-                <h3 class="font-headline-lg-mobile text-white mb-2">{{ item.title }}</h3>
-                <p class="font-body-md text-white/90 text-sm">
-                  {{ item.description }}
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- 09 Bento Grid -->
-          <div v-else-if="item.type === 'bento'" :class="[getSizeClasses(item.size), 'relative group overflow-hidden border border-outline/10 bg-surface-container']">
-            <img src="~/assets/images/bento-grid.png" alt="Bento grid" class="absolute inset-0 w-full h-full  object-top object-cover transition-transform duration-700 group-hover:scale-105" />
-            <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-500"></div>
-            <div class="relative h-full p-8 flex flex-col justify-between transition-colors z-10">
-              <div class="font-label-mono text-white/80 flex justify-between items-center">
-                <span>{{ item.id }}</span>
-                <component :is="item.icon" class="w-5 h-5 text-white/80" />
-              </div>
-              <div class="mt-auto pt-16">
-                <h3 class="font-headline-lg-mobile text-white mb-2">{{ item.title }}</h3>
-                <p class="font-body-md text-white/90 text-sm">
-                  {{ item.description }}
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- 10 Micro Interaction -->
-          <div v-else-if="item.type === 'micro'" :class="[getSizeClasses(item.size), 'relative group overflow-hidden border border-outline/10 bg-surface-container']">
-            <img src="~/assets/images/micro-interaction.png" alt="Micro interaction" class="absolute inset-0 w-full h-full  object-top object-cover transition-transform duration-700 group-hover:scale-105" />
-            <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-500"></div>
-            <div class="relative h-full p-8 flex flex-col justify-between transition-colors z-10">
-              <div class="font-label-mono text-white/80 flex justify-between items-center">
-                <span>{{ item.id }}</span>
-                <component :is="item.icon" class="w-5 h-5 text-white/80" />
-              </div>
-              <div class="mt-auto pt-16">
-                <h3 class="font-headline-lg-mobile text-white mb-2">{{ item.title }}</h3>
-                <p class="font-body-md text-white/90 text-sm">
-                  {{ item.description }}
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- 11 Abstract Shapes -->
-          <div v-else-if="item.type === 'abstract'" :class="[getSizeClasses(item.size), 'relative group overflow-hidden border border-outline/10 bg-surface-container']">
-            <img src="~/assets/images/abstract-shapes.png" alt="Abstract shapes" class="absolute inset-0 w-full h-full  object-top object-cover transition-transform duration-700 group-hover:scale-105" />
+          <div :class="[getSizeClasses(item.size), 'relative group overflow-hidden border border-outline/10 bg-surface-container']">
+            <img :src="item.image" :alt="item.title" :class="['absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105', item.imageClass || '']" />
             <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-500"></div>
             <div class="relative h-full p-8 flex flex-col justify-between transition-colors z-10">
               <div class="font-label-mono text-white/80 flex justify-between items-center">
@@ -229,6 +48,18 @@ import {
   Circle, Palette, Moon, LayoutGrid, MousePointerClick, Shapes 
 } from 'lucide-vue-next'
 
+import minimalismImg from '~/assets/images/minimalism.png'
+import glassmorphismImg from '~/assets/images/glassmorphism.png'
+import kineticImg from '~/assets/images/kinetic-type.png'
+import neobrutalismImg from '~/assets/images/neo-brutalism.png'
+import asymmetricImg from '~/assets/images/asymmetric.png'
+import neumorphismImg from '~/assets/images/neumorphism.png'
+import gradientsImg from '~/assets/images/vibrant-gradients.png'
+import darkmodeImg from '~/assets/images/dark-mode.png'
+import bentoImg from '~/assets/images/bento-grid.png'
+import microImg from '~/assets/images/micro-interaction.png'
+import abstractImg from '~/assets/images/abstract-shapes.png'
+
 const ecosystemItems = [
   {
     id: '01',
@@ -236,7 +67,8 @@ const ecosystemItems = [
     description: 'Fokus pada kontras yang kuat, negative space, dan tipografi esensial.',
     size: 'large',
     type: 'minimalism',
-    icon: AlignLeft
+    icon: AlignLeft,
+    image: minimalismImg
   },
   {
     id: '02',
@@ -244,7 +76,8 @@ const ecosystemItems = [
     description: 'Efek transparan, blur, dan elemen visual layaknya kaca.',
     size: 'normal',
     type: 'glassmorphism',
-    icon: Layers
+    icon: Layers,
+    image: glassmorphismImg
   },
   {
     id: '03',
@@ -252,7 +85,8 @@ const ecosystemItems = [
     description: 'Tipografi bergerak dan dinamis untuk menonjolkan pesan penting.',
     size: 'normal',
     type: 'kinetic',
-    icon: Type
+    icon: Type,
+    image: kineticImg
   },
   {
     id: '04',
@@ -260,7 +94,8 @@ const ecosystemItems = [
     description: 'Garis tegas, shape bold, kontras tinggi, dan ekspresif.',
     size: 'normal',
     type: 'neobrutalism',
-    icon: Square
+    icon: Square,
+    image: neobrutalismImg
   },
   {
     id: '05',
@@ -268,7 +103,8 @@ const ecosystemItems = [
     description: 'Komposisi layout yang nggak simetris.',
     size: 'normal',
     type: 'asymmetric',
-    icon: MoveDiagonal
+    icon: MoveDiagonal,
+    image: asymmetricImg
   },
   {
     id: '06',
@@ -276,7 +112,8 @@ const ecosystemItems = [
     description: 'Soft shadow bikin elemen UI keliatan menyatu dengan background.',
     size: 'wide-third',
     type: 'neumorphism',
-    icon: Circle
+    icon: Circle,
+    image: neumorphismImg
   },
   {
     id: '07',
@@ -284,7 +121,8 @@ const ecosystemItems = [
     description: 'Kombinasi gradien warna yang ngejreng dan ekspresif.',
     size: 'wide-third',
     type: 'gradients',
-    icon: Palette
+    icon: Palette,
+    image: gradientsImg
   },
   {
     id: '08',
@@ -292,7 +130,8 @@ const ecosystemItems = [
     description: 'Tampilan antarmuka gelap yang modern, elegan, dan kontras.',
     size: 'wide-third',
     type: 'darkmode',
-    icon: Moon
+    icon: Moon,
+    image: darkmodeImg
   },
   {
     id: '09',
@@ -300,7 +139,9 @@ const ecosystemItems = [
     description: 'Struktur layout modular menggunakan card dengan ukuran bervariasi.',
     size: 'wide-half',
     type: 'bento',
-    icon: LayoutGrid
+    icon: LayoutGrid,
+    image: bentoImg,
+    imageClass: 'object-top'
   },
   {
     id: '10',
@@ -308,7 +149,9 @@ const ecosystemItems = [
     description: 'Animasi kecil buat interaksi tombol, card, dan navigasi (hover effect).',
     size: 'normal',
     type: 'micro',
-    icon: MousePointerClick
+    icon: MousePointerClick,
+    image: microImg,
+    imageClass: 'object-top'
   },
   {
     id: '11',
@@ -316,7 +159,9 @@ const ecosystemItems = [
     description: 'Elemen abstrak visual untuk memperkuat identitas brand website Anda.',
     size: 'normal',
     type: 'abstract',
-    icon: Shapes
+    icon: Shapes,
+    image: abstractImg,
+    imageClass: 'object-top'
   }
 ]
 
