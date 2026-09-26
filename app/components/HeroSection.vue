@@ -1,5 +1,6 @@
 <script setup>
 import { Code2, ArrowRight, MessageCircle } from "lucide-vue-next";
+import heroImg from "~/assets/images/hero.png";
 </script>
 
 <template>
@@ -53,10 +54,10 @@ import { Code2, ArrowRight, MessageCircle } from "lucide-vue-next";
         </div>
       </div>
 
-      <div class="lg:col-span-5 lg:col-start-8 mt-16 lg:mt-0 relative">
-        <div class="hard-offset-container w-full h-125 md:h-162 -rotate-2">
+      <div class="lg:col-span-6 lg:col-start-7 mt-16 lg:mt-0 relative">
+        <div class="hard-offset-container w-full -rotate-2">
           <div class="hard-offset-shadow bg-secondary transition-colors"></div>
-          <div class="relative w-full h-full border border-outline/20 bg-surface-container overflow-hidden transition-colors">
+          <div class="relative w-full border border-outline/20 bg-surface-container overflow-hidden transition-colors">
             <div
               class="absolute top-0 left-0 w-full h-8 bg-surface-container-high border-b border-outline/20 flex items-center px-4 gap-2 transition-colors"
             >
@@ -65,9 +66,9 @@ import { Code2, ArrowRight, MessageCircle } from "lucide-vue-next";
               <div class="w-2 h-2 rounded-full bg-primary transition-colors"></div>
             </div>
             <img
-              class="w-full h-full object-cover pt-8 opacity-80 mix-blend-luminosity grayscale hover:grayscale-0 transition-all duration-700"
-              alt="A striking abstract 3D rendering of dark geometric shapes interlocking with glowing neon orange and yellow wireframes, illustrating a modern, high-tech, custom development aesthetic."
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuD49mEoqiJdN76LyI04oQ32McBRDQbIQ62kilFXB2pR5r_Nrenow4CuG5qF8HtuVPxXrHYsTtMo7FdRwe_cVppFtHR8_96wDKiUTA4HLbPMUds9v1fTUm5hz4sKloJYKqMl8wL-25nfDTb95o0A9SjMGnz3ML91GKJch1rAmCHHStEasOGkwtgu7A2HZZrWBO6DRWu2D2_Kq8eUBqECIA83CfntPwl90rsMDcWIseTzSM4ooMtKHiou"
+              class="w-full h-auto pt-8"
+              alt="Hero representation of custom UI design"
+              :src="heroImg"
             />
           </div>
         </div>

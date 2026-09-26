@@ -1,22 +1,22 @@
 <script setup>
 import { ArrowUpRight } from "lucide-vue-next";
+import aetherfieldImg from "~/assets/images/projects/aetherfield.png";
+import kopiLerengImg from "~/assets/images/projects/kopi-lereng.png";
 
 const projects = [
   {
-    title: "Aura Financial",
-    tags: ["Fintech", "Dark Mode"],
+    title: "Aetherfield",
+    tags: ["minimalism"],
     offsetDown: true,
-    alt: "A dark minimalist dashboard UI design mockup displayed on an angled screen floating in a dark studio environment, featuring high-contrast white text, orange accent charts, and a brutalist grid layout.",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAxOy42BCiqTz8Nih6AWBWSeIErCNUTTXm1izUMvrmZxxoNgfSFDITprhOY3C5jxAvparkMcy7N_xUlWWhi8R8-38Z-RrP0MnZB4xlZu18abtv-r8ip3kuG2ppb31vuHJ8zilmHbW92WS_fJZAWERayNVw4yIdU5VBQzL-0npbHfbVHLL8eHn8T7DCW0ad3TvLUiUoEy175mVAFkVGdzP4DC3jpVZhHiOXG-R0PKdigP2dRYRuE3uOt",
+    alt: "Aetherfield project design",
+    image: aetherfieldImg,
   },
   {
-    title: "Vanguard Arch",
-    tags: ["Agency", "Asymmetric"],
+    title: "Kopi Lereng",
+    tags: ["Bento Grid", "Minimalism"],
     offsetDown: false,
-    alt: "A striking landing page design for an architecture firm, featuring asymmetric typography, large stark black and white imagery, and subtle neon yellow interactive elements.",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAmEQHlJc0nMuudXPNXGT4_Hslakha8rlBwDJAFL66qELeoHn2GpZVaxuGu-3y64KDXuz9qPCWlAgnnQYm0juF2RbnH-Mw4HNCvPmhdbU-wdwvtkoLG8R7NIT8_S-BkC7o066ZQ0HHHySr_B4BXwbylDIYQNQOEHMl9WDr2jem_YzPfnGMMWejcJXBhYk3LvBKfw9wgl-o8wUkzAwKTZ5QIl16CdJfzkM-f4UtEwsrLYaxQ0XyPbY5k",
+    alt: "Kopi Lereng project design",
+    image: kopiLerengImg,
   },
 ];
 </script>

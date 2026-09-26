@@ -2,9 +2,14 @@
   <section id="styles" class="px-gutter py-16 mt-20">
     <div class="max-w-[1600px] mx-auto">
       <div class="mb-16 flex items-baseline justify-between border-b border-outline/20 pb-4 transition-colors">
-        <h2 class="font-headline-lg-mobile md:font-headline-lg text-on-surface transition-colors">
-          Ekosistem Desain
-        </h2>
+        <div>
+          <h2 class="font-headline-lg-mobile md:font-headline-lg text-on-surface transition-colors">
+            Ekosistem Desain
+          </h2>
+          <p class="font-body-md text-on-surface-variant text-sm mt-2 italic md:hidden">
+            * Click card untuk melihat detail
+          </p>
+        </div>
         <span class="font-label-mono text-secondary text-sm hidden md:block transition-colors">
           [ EKSPLOR_PATTERN ]
         </span>
@@ -13,19 +18,28 @@
       <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-12 auto-rows-60 gap-4">
         <template v-for="item in ecosystemItems" :key="item.id">
           
-          <div :class="[getSizeClasses(item.size), 'relative group overflow-hidden border border-outline/10 bg-surface-container']">
-            <img :src="item.image" :alt="item.title" :class="['absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105', item.imageClass || '']" />
-            <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-500"></div>
+          <div 
+            @click="toggleCard(item.id)"
+            :class="[
+              getSizeClasses(item.size), 
+              'relative group overflow-hidden border border-outline/10 bg-surface-container cursor-pointer',
+              { 'is-active': activeCardId === item.id }
+            ]"
+          >
+            <img :src="item.image" :alt="item.title" :class="['absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 group-[.is-active]:scale-105', item.imageClass || '']" />
+            <div class="absolute inset-0 bg-black/10 group-hover:bg-black/60 group-[.is-active]:bg-black/60 transition-colors duration-500"></div>
             <div class="relative h-full p-8 flex flex-col justify-between transition-colors z-10">
-              <div class="font-label-mono text-white/80 flex justify-between items-center">
+              <div class="font-label-mono text-white/80 flex justify-between items-center opacity-0 group-hover:opacity-100 group-[.is-active]:opacity-100 transition-opacity duration-300">
                 <span>{{ item.id }}</span>
                 <component :is="item.icon" class="w-5 h-5 text-white/80" />
               </div>
               <div class="mt-auto pt-16">
-                <h3 class="font-headline-lg-mobile text-white mb-2">{{ item.title }}</h3>
-                <p class="font-body-md text-white/90 text-sm">
-                  {{ item.description }}
-                </p>
+                <h3 class="font-headline-lg-mobile text-white mb-2 transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-[.is-active]:opacity-100 group-hover:translate-y-0 group-[.is-active]:translate-y-0">{{ item.title }}</h3>
+                <div class="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] group-[.is-active]:grid-rows-[1fr] transition-all duration-300 ease-in-out">
+                  <p class="font-body-md text-white/90 text-sm overflow-hidden opacity-0 group-hover:opacity-100 group-[.is-active]:opacity-100 transition-opacity duration-300 delay-75">
+                    {{ item.description }}
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -43,6 +57,7 @@
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue'
 import { 
   AlignLeft, Layers, Type, Square, MoveDiagonal, 
   Circle, Palette, Moon, LayoutGrid, MousePointerClick, Shapes 
@@ -177,6 +192,16 @@ const getSizeClasses = (size: string) => {
       return 'lg:col-span-3 lg:row-span-1'
     default: 
       return 'lg:col-span-3 lg:row-span-1'
+  }
+}
+
+const activeCardId = ref<string | null>(null)
+
+const toggleCard = (id: string) => {
+  if (activeCardId.value === id) {
+    activeCardId.value = null
+  } else {
+    activeCardId.value = id
   }
 }
 </script>

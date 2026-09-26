@@ -66,11 +66,13 @@ const scrollToSection = (e, href) => {
 
         <div class="brutalist-btn-group hidden md:inline-block">
           <div class="brutalist-btn-ghost"></div>
-          <button
-            class="brutalist-btn-main bg-primary text-on-primary font-label-mono uppercase tracking-widest px-6 py-2 transition-colors"
+          <a
+            href="https://www.fiverr.com/dreel_/build-a-fast-responsive-landing-page-with-nuxt-and-tailwindcss"
+            target="_blank"
+            class="brutalist-btn-main bg-primary text-on-primary font-label-mono uppercase tracking-widest px-6 py-2 transition-colors block text-center"
           >
             Mulai Sekarang
-          </button>
+          </a>
         </div>
 
         <button class="md:hidden text-primary transition-colors" @click="mobileOpen = !mobileOpen">
@@ -95,11 +97,13 @@ const scrollToSection = (e, href) => {
       >
         {{ link.label }}
       </a>
-      <button
+      <a
+        href="https://www.fiverr.com/dreel_/build-a-fast-responsive-landing-page-with-nuxt-and-tailwindcss"
+        target="_blank"
         class="mt-2 bg-primary text-on-primary font-label-mono uppercase tracking-widest px-6 py-2 flex items-center justify-center gap-2"
       >
         Mulai Sekarang
-      </button>
+      </a>
     </nav>
   </header>
 </template>
